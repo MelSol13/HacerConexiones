@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacer Conexiones</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="nav">
+        <h1 class="nav-title">Perfil</h1>
+        <ul class="nav-links">
+            <li><a href="#" class="active">Inicio</a></li>
+            <li><a href="#" class="active">Mi Perfil</a></li>
+            <li><a href="#" class="active">Encontrar Conexiones</a></li>
+            <li><button class="btn">Cerrar sesión</button></li>
+        </ul>
+    </div>
+    <main class="pag_principal">   
+        <div class="columna izquierda">
+            <div class="card">
+                <div class="card-header">
+                    <img src="img/user-circle.png" alt="User">
+                </div>
+                <div class="card-body">   
+                    <h1 class="h1">Jane Doe</h1>   
+                    <h3>
+                        <img src="img/map-marker.png" 
+                        alt="marcador de mapa" 
+                        class="icon"> Guápiles, Costa Rica
+                    </h3> 
+                    <p class="parrafo">
+                        Estudiante de programacion -
+                        <br>Amante de los perritos
+                    </p>
+                    <a onclick="cambia_nombre()" href="#">
+                        <img src="img/gear.png"
+                        alt="Engrane"
+                        class="icon">Editar Perfil
+                    </a>
+                </div>    
+            </div>
+            <div class="card-2">
+                <div class="card-header2">
+                        <h4>Educación</h4>
+                </div>
+                <div class="card-body2">   
+                    <h3 class="h3">Coding Dojo - Full Stack Bootcamp</h3>
+                    <h4 class="h4">Junio 2023 - Octubre2023</h4>  
+                    <h4 class="h4-2">Triple black belt in MERN,Python, and C#</h4>
+                </div> 
+            </div>         
+        </div>
+        <div class="columna derecha">
+            <div class="card-3">
+                <div class="card-header3">
+                    <h4 class="circulo">2</h4>
+                    <h4>Solicitud de Conexión </h4>
+                </div>
+                <div class="card-body3">   
+                    <div class="solicitud">
+                        <div onclick="eliminar(this)" class="user1">
+                            <img src="img/todd-s.jpg" class="imagen" alt="imagen Todd">
+                            <h4 class="nombres">Todd E</h4>
+                            <img src="img/accept-circle.png" class="accept" alt="accept">
+                            <img src="img/close-circle.png" class="close" alt="close">
+                        </div>    
+                    </div>
+                    <div class="solicitud">
+                        <div class="user2">
+                            <img src="img/phil-s.jpg" class="imagen" alt="imagen Phil">
+                            <h4 class="nombres">Phil K</h4>
+                            <img onclick="nueva_conexion()" src="img/accept-circle.png" class="accept1" alt="accept">
+                            <img onclick="menos_conexion()" src="img/close-circle.png" class="close" alt="close">
+                        </div>    
+                    </div>   
+                </div>  
+            </div>    
+            <div class="card-4">
+                <div class="card-header4">
+                    <h4 class="circulo-2"><span>418</span></h4>
+                    <h4>Tus Conexiones </h4>
+                </div>
+                <div class="card-body4">   
+                    <div class="conexiones">
+                        <img src="img/adrien-s.jpg" class="imagen" alt="imagen Adrien">
+                        <h4 class="nombres">Adrien D</h4>
+                    </div>
+                    <div class="conexiones">   
+                        <img src="img/anne-s.jpg" class="imagen" alt="imagen Anne">
+                        <h4 class="nombres">Anne J</h4>
+                    </div> 
+                    <div class="conexiones">
+                        <img src="img/alayne-s.jpg" class="imagen" alt="imagen Alayne">
+                        <h4 class="nombres">Alayne T</h4>
+                    </div>
+                    <div class="conexiones">
+                        <img src="img/arry-s.jpg" class="imagen" alt="imagen Arry">
+                        <h4 class="nombres">Arry Y</h4>
+                    </div>
+                </div>
+                <div class="card-foot">
+                    <a href="#">Ver más
+                    </a>
+                </div>
+            </div>    
+        </div>  
+    </main> 
+    <script src="./script.js"></script>
+</body>
+</html>
